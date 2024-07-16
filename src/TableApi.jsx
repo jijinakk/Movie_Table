@@ -33,7 +33,6 @@ const TableApi = () => {
     const handleCloseModal = () => {
       setShowModal(false);
     };
-    
     const handleShowDeleteModal = (movie) => {
       setSelectedMovie(movie);
       setShowDeleteModal(true);
@@ -78,9 +77,7 @@ const TableApi = () => {
           };
           
   return (
-    <div>
-      
-          
+    <div>       
      Search <input
       type="text"
       style={{margin:'20px 10px 10px 10px'}}
@@ -88,7 +85,7 @@ const TableApi = () => {
       onChange={(e) => setsearch(e.target.value)}
 />
 <button  style={{
-        backgroundColor: 'green', color: 'white'}} onClick={handleSearch}>Search</button>
+        backgroundColor: 'blue', color: 'white'}} onClick={handleSearch}>Search</button>
 
     <div><Table striped bordered hover size="sm">
     <thead>
